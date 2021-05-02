@@ -1,0 +1,5 @@
+<div *ngIf="!configurationSet">
+	Loading CkEditor ...
+</div>
+
+<app-editor *ngIf="configurationSet" [configuration]="config" [channelId]="channelId" (ready)="onEditorReady($event)"></app-editor>
