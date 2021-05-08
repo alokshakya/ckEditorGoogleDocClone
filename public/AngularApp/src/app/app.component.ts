@@ -25,7 +25,8 @@ export class AppComponent implements OnInit {
 		// console.log('uploadUrl ', uploadUrl);
 		const webSocketUrl = environment.WEB_SOCKET_URL;
 		// console.log(' Web Socket Url ', webSocketUrl);
-		const tokenUrl = environment.TOKEN_URL;
+		// const tokenUrl = environment.TOKEN_URL;
+		const tokenUrl = window.location.origin + '/users/';
 		// console.log('token Url ', tokenUrl);
 		this.config = {
 			tokenUrl,
