@@ -7,7 +7,8 @@
     "ng": "ng",
     "config": "ts-node ./setenv.ts",
     "start": "npm run config -- --environment=dev && ng serve",
-    "build": "npm install && npm run config -- --environment=prod && ng build --prod"
+    "build": "npm install && npm run config -- --environment=dev && ng build --prod",
+    "build:prod": "npm install && npm run config -- --environment=prod && ng build --prod"
   },
   "dependencies": {
     "@angular/common": "~8.0.0",
